@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    background-image: url('background/clapboard_roll.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: left bottom ;
+    color: white;
+    height: 100vh;
+}
+/* .background{
+
+    height: 400px;
+    width: 400px;
+} */
+
+header a{
+    text-decoration: none;
+    /* border: 2px solid white; */
+}
+
+header a:visited, a:active, a:link{
+    color:white;
+}
+
+header{
+    background-color: black;
+    height: 40px;
+}
+
+
+.right-menu a{
+    float: right;
+    height: 35px;
+    width: auto;
+    font-size: 17px;
+    padding-top: 10px;
+    margin-right: 30px;
+}
+
+.left-menu a{
+    float: left;
+    height: 35px;
+    width: auto;
+    font-size: 17px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.search{
+    /* display: inline-block; */
+    float: right;
+    height: 35px;
+    width: auto;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+img{
+    height:100px;
+    width:300px;
+}
+.movie-list{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: black ;
+    color: white;
+}
+
+.movie-list a {
+    text-decoration: none;
+}
+.movie-list a:visited, a:active, a:link{
+    color: white;
+}
+
+.movie-list:hover{
+    border: 3px solid white;
+}
+
+.movie-list h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.movie-details ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: 5% 7.5%;
+    display:flex;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.movie-details{
+    display: flex;
+
+    width: 70%;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 20px 15%;
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
+
+.movie-details img{
+    padding: 10% 20px;
+   
+    width: 30%;
+    height: auto;
+}
+
+.movie-details li{
+    padding-top: 25px;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}

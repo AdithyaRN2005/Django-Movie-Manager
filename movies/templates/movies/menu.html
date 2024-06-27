@@ -1,0 +1,4 @@
+{% for genre in genres %}
+<a href="{% url 'genre_details' genre.slug %}">{{genre.title}}</a>
+{% endfor %}
+

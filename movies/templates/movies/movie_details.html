@@ -1,0 +1,23 @@
+{% extends 'movies/base.html' %}
+
+{% block title%}{{movie.title}}{% endblock %}
+
+{% block content %}
+<div class="movie-details">
+    {% if movie.poster %}
+        <img src="{{ movie.poster.url }}" alt="{{ movie.title }} Poster">
+    {% else %}
+        <img src="media/movie_posters/no_thumbnail.png" alt="No Thumbnail">
+    {% endif %}
+    <ol>
+    <li><strong>Title: </strong>{{ movie.title }}</li>
+    <li><strong>Director: </strong>{{movie.director}}</li>
+    <li><strong>Genre: </strong>
+        {% for genre in movie.genre.all %}
+        {{ genre.title }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}</li>
+    <li><strong>Release Date: </strong>{{movie.release_date}}</li>
+    <li><strong>Description: </strong>{{movie.description}}</li>
+    </ol>
+</div>
+{% endblock %}
